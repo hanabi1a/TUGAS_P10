@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Account">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movies"
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/strangerthings1" />
+
+        <!-- Logo Aplikasi -->
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/netflixlogo1" />
+
+        <!-- Search Bar -->
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/searchbarr"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="45dp"
+            android:layout_toRightOf="@id/applogo"
+            android:backgroundTint="@color/white"
+            android:text="search"/>
+
+
+        <!-- Title 1 -->
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="520dp"
+            android:textSize="23sp"
+            android:text="Most Popular on Netflix"
+            android:textStyle="bold"
+            android:textColor="@color/grey" />
+
+        <!-- Play Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/playbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:text="PLAY"/>
+
+
+        <!-- Categories txt -->
+        <TextView
+            android:id="@+id/categoriestxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/playbutton"
+            android:textColor="@color/grey"
+            android:text="Categories"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fantasybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onCLick"
+            android:text="Fantasy"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_below="@id/categoriestxt"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/thrillerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onCLick"
+            android:text="Thriller"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_below="@id/categoriestxt"
+            android:layout_toRightOf="@id/fantasybutton"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/actionbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onCLick"
+            android:text="Action"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_below="@id/categoriestxt"
+            android:layout_toRightOf="@id/thrillerbutton"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/comedybutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="38dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onCLick"
+            android:text="Comedy"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_below="@id/fantasybutton"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dramasbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onCLick"
+            android:text="Dramas"
+            android:textColor="@color/grey"
+            android:textSize="14sp"
+            android:layout_below="@id/fantasybutton"
+            android:layout_toRightOf="@id/comedybutton"/>
+
+        <!-- Categories txt -->
+        <TextView
+            android:id="@+id/continuewatchingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/comedybutton"
+            android:textColor="@color/grey"
+            android:text="Continue Watching"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/cardml1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/continuewatchingtxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/cardshape">
+
+            <ImageView
+                android:id="@+id/movies1"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/strangerthingscard" />
+
+            <TextView
+                android:id="@+id/mv1title"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/movies1"
+                android:text="Stranger Things : Season 1"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/mv1desc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv1title"
+                android:layout_toRightOf="@id/movies1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:textColor="@color/grey"
+                android:text="Set in the 1980s in the fictional town of Hawkins, Indiana, a group of kids encounter supernatural events."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mv1epbutton"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv1desc"
+                android:layout_toRightOf="@id/movies1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#F3E3E2E2"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text=" EP. 6"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

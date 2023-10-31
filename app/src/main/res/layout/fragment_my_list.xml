@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MyList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logo Aplikasi -->
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/netflixlogo1" />
+
+        <!-- Title 1 -->
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/applogo"
+            android:textSize="20sp"
+            android:text="Syifa's Movie Lists!"
+            android:textStyle="bold"
+            android:textColor="@color/grey" />
+
+        <RelativeLayout
+            android:id="@+id/cardml1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applogo"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/cardshape">
+
+            <ImageView
+                android:id="@+id/movies1"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/strangerthingscard" />
+
+            <TextView
+                android:id="@+id/mv1title"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/movies1"
+                android:text="Stranger Things : Season 1"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/mv1desc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv1title"
+                android:layout_toRightOf="@id/movies1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey"
+                android:text="Set in the 1980s in the fictional town of Hawkins, Indiana, a group of kids encounter supernatural events."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mv1epbutton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv1desc"
+                android:layout_toRightOf="@id/movies1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#F3E3E2E2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text=" EPISODES "/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cardml2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardml1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/cardshape">
+
+            <ImageView
+                android:id="@+id/movies2"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/strangerthingscard" />
+
+            <TextView
+                android:id="@+id/mv2title"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/movies2"
+                android:text="Stranger Things : Season 2"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/mv2desc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv2title"
+                android:layout_toRightOf="@id/movies2"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey"
+                android:text="Set in the 1980s in the fictional town of Hawkins, Indiana, a group of kids encounter supernatural events."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mv2epbutton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv2desc"
+                android:layout_toRightOf="@id/movies2"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#F3E3E2E2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text=" EPISODES "/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cardml3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardml2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/cardshape">
+
+            <ImageView
+                android:id="@+id/movies3"
+                android:layout_marginTop="19dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:src="@drawable/strangerthingscard" />
+
+            <TextView
+                android:id="@+id/mv3title"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/movies3"
+                android:text="Stranger Things : Season 3"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/mv3desc"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv3title"
+                android:layout_toRightOf="@id/movies3"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey"
+                android:text="Set in the 1980s in the fictional town of Hawkins, Indiana, a group of kids encounter supernatural events."/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mv3epbutton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mv3desc"
+                android:layout_toRightOf="@id/movies3"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="#F3E3E2E2"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text=" EPISODES "/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+
